@@ -1,0 +1,16 @@
+--- 
+title: "A Portfolio book of Nicky Klaver"
+author: "Nicky Klaver"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+highlight: tango
+documentclass: book
+link-citations: yes
+github-repo: rstudio/dsfb2_workflows_portfolio
+description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+---
+
+# Portfolio of Nicky
+
+
