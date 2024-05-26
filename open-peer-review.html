@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>5 Open Peer Review | The portfolio of Nicky Klaver</title>
+  <meta name="description" content="5 Open Peer Review | The portfolio of Nicky Klaver" />
+  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="5 Open Peer Review | The portfolio of Nicky Klaver" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta name="github-repo" content="rstudio/dsfb2_workflows_portfolio" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="5 Open Peer Review | The portfolio of Nicky Klaver" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="portfolio-assignment-1.1-c-elegans-plate.html"/>
+<link rel="next" href="the-easyread-r-package.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/core-js-2.5.3/shim.min.js"></script>
+<script src="libs/react-18.2.0/react.min.js"></script>
+<script src="libs/react-18.2.0/react-dom.min.js"></script>
+<script src="libs/reactwidget-1.0.0/react-tools.js"></script>
+<link href="libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="libs/reactable-0.4.4/reactable.css" rel="stylesheet" />
+<script src="libs/reactable-binding-0.4.4/reactable.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="1" data-path="cv.html"><a href="cv.html"><i class="fa fa-check"></i><b>1</b> CV</a></li>
+<li class="chapter" data-level="2" data-path="free-space-assignment.html"><a href="free-space-assignment.html"><i class="fa fa-check"></i><b>2</b> Free space assignment</a>
+<ul>
+<li class="chapter" data-level="" data-path="free-space-assignment.html"><a href="free-space-assignment.html#introduction-single-cell-rna-sequencing"><i class="fa fa-check"></i>Introduction single cell RNA sequencing</a>
+<ul>
+<li class="chapter" data-level="" data-path="free-space-assignment.html"><a href="free-space-assignment.html#start-of-the-free-time-project"><i class="fa fa-check"></i>Start of the free time project:</a></li>
+<li class="chapter" data-level="" data-path="free-space-assignment.html"><a href="free-space-assignment.html#meaning-of-words"><i class="fa fa-check"></i>Meaning of words</a></li>
+<li class="chapter" data-level="" data-path="free-space-assignment.html"><a href="free-space-assignment.html#r-packages-for-single-cell-rna-sequencing"><i class="fa fa-check"></i>R packages for Single cell RNA sequencing</a></li>
+<li class="chapter" data-level="" data-path="free-space-assignment.html"><a href="free-space-assignment.html#revealing-the-umi-matrix"><i class="fa fa-check"></i>Revealing the Umi Matrix</a></li>
+<li class="chapter" data-level="" data-path="free-space-assignment.html"><a href="free-space-assignment.html#analyse-the-unique-molecular-identifier-umi-matrix"><i class="fa fa-check"></i>Analyse the Unique Molecular Identifier (UMI) matrix</a></li>
+<li class="chapter" data-level="" data-path="free-space-assignment.html"><a href="free-space-assignment.html#analysis-overview"><i class="fa fa-check"></i>Analysis overview</a></li>
+<li class="chapter" data-level="" data-path="free-space-assignment.html"><a href="free-space-assignment.html#scrna-course"><i class="fa fa-check"></i>scRNA course!?!</a></li>
+<li class="chapter" data-level="" data-path="free-space-assignment.html"><a href="free-space-assignment.html#seurat-analysis"><i class="fa fa-check"></i>Seurat analysis</a></li>
+<li class="chapter" data-level="" data-path="free-space-assignment.html"><a href="free-space-assignment.html#seurat-pre-processing"><i class="fa fa-check"></i>Seurat pre-processing</a></li>
+<li class="chapter" data-level="" data-path="free-space-assignment.html"><a href="free-space-assignment.html#seurat-dimensionality-reduction-and-clustering"><i class="fa fa-check"></i>Seurat dimensionality reduction and clustering</a></li>
+<li class="chapter" data-level="" data-path="free-space-assignment.html"><a href="free-space-assignment.html#seurat-expression-profile"><i class="fa fa-check"></i>Seurat expression profile</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="guerilla-analytics.html"><a href="guerilla-analytics.html"><i class="fa fa-check"></i><b>3</b> Guerilla analytics</a>
+<ul>
+<li class="chapter" data-level="" data-path="guerilla-analytics.html"><a href="guerilla-analytics.html#print-root-of-daur2-project"><i class="fa fa-check"></i>Print root of DAUR2 project</a></li>
+<li class="chapter" data-level="" data-path="guerilla-analytics.html"><a href="guerilla-analytics.html#root-of-daur2-project"><i class="fa fa-check"></i>Root of DAUR2 project</a></li>
+<li class="chapter" data-level="" data-path="guerilla-analytics.html"><a href="guerilla-analytics.html#print-root-of-workflows-portfolio-project"><i class="fa fa-check"></i>Print root of workflows portfolio project</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="portfolio-assignment-1.1-c-elegans-plate.html"><a href="portfolio-assignment-1.1-c-elegans-plate.html"><i class="fa fa-check"></i><b>4</b> Portfolio assignment 1.1 C Elegans Plate</a>
+<ul>
+<li class="chapter" data-level="" data-path="portfolio-assignment-1.1-c-elegans-plate.html"><a href="portfolio-assignment-1.1-c-elegans-plate.html#anything-peculiar"><i class="fa fa-check"></i>Anything peculiar?</a></li>
+<li class="chapter" data-level="" data-path="portfolio-assignment-1.1-c-elegans-plate.html"><a href="portfolio-assignment-1.1-c-elegans-plate.html#read-in-excel-file-in-r"><i class="fa fa-check"></i>Read in excel file in R</a></li>
+<li class="chapter" data-level="" data-path="portfolio-assignment-1.1-c-elegans-plate.html"><a href="portfolio-assignment-1.1-c-elegans-plate.html#inspect-the-data-types-of-the-following-columns"><i class="fa fa-check"></i>Inspect the data types of the following columns</a></li>
+<li class="chapter" data-level="" data-path="portfolio-assignment-1.1-c-elegans-plate.html"><a href="portfolio-assignment-1.1-c-elegans-plate.html#create-a-graph-displaying-a-scatterplot"><i class="fa fa-check"></i>Create a graph displaying a scatterplot</a></li>
+<li class="chapter" data-level="" data-path="portfolio-assignment-1.1-c-elegans-plate.html"><a href="portfolio-assignment-1.1-c-elegans-plate.html#make-character-into-numeric"><i class="fa fa-check"></i>Make character into numeric</a></li>
+<li class="chapter" data-level="" data-path="portfolio-assignment-1.1-c-elegans-plate.html"><a href="portfolio-assignment-1.1-c-elegans-plate.html#further-analysis"><i class="fa fa-check"></i>Further analysis</a></li>
+<li class="chapter" data-level="" data-path="portfolio-assignment-1.1-c-elegans-plate.html"><a href="portfolio-assignment-1.1-c-elegans-plate.html#normalize-the-data-to-the-negative-control"><i class="fa fa-check"></i>normalize the data to the negative control</a></li>
+<li class="chapter" data-level="" data-path="portfolio-assignment-1.1-c-elegans-plate.html"><a href="portfolio-assignment-1.1-c-elegans-plate.html#why-normalize"><i class="fa fa-check"></i>Why normalize?</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="open-peer-review.html"><a href="open-peer-review.html"><i class="fa fa-check"></i><b>5</b> Open Peer Review</a>
+<ul>
+<li class="chapter" data-level="" data-path="open-peer-review.html"><a href="open-peer-review.html#initial-peer-review-criteria-listing"><i class="fa fa-check"></i>Initial peer review criteria listing</a>
+<ul>
+<li class="chapter" data-level="" data-path="open-peer-review.html"><a href="open-peer-review.html#criteria-and-scoring-initial-peer-review"><i class="fa fa-check"></i>Criteria and scoring initial peer review</a></li>
+<li class="chapter" data-level="" data-path="open-peer-review.html"><a href="open-peer-review.html#findings-initial-peer-review"><i class="fa fa-check"></i>Findings initial peer review</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="open-peer-review.html"><a href="open-peer-review.html#the-second-peer-review-with-code-and-data"><i class="fa fa-check"></i>The second peer review with code and data</a>
+<ul>
+<li class="chapter" data-level="5.0.1" data-path="open-peer-review.html"><a href="open-peer-review.html#osf-paper"><i class="fa fa-check"></i><b>5.0.1</b> OSF paper</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="the-easyread-r-package.html"><a href="the-easyread-r-package.html"><i class="fa fa-check"></i><b>6</b> The easyRead R package</a></li>
+<li class="chapter" data-level="7" data-path="project-introduction-pedriactic-cancer.html"><a href="project-introduction-pedriactic-cancer.html"><i class="fa fa-check"></i><b>7</b> Project introduction: Pedriactic Cancer</a>
+<ul>
+<li class="chapter" data-level="" data-path="project-introduction-pedriactic-cancer.html"><a href="project-introduction-pedriactic-cancer.html#cfdna"><i class="fa fa-check"></i>cfDNA</a></li>
+<li class="chapter" data-level="" data-path="project-introduction-pedriactic-cancer.html"><a href="project-introduction-pedriactic-cancer.html#r-shiny-app"><i class="fa fa-check"></i>R shiny app</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="parmaters-showcased-on-ecdc-results.html"><a href="parmaters-showcased-on-ecdc-results.html"><i class="fa fa-check"></i><b>8</b> Parmaters showcased on ECDC results</a>
+<ul>
+<li class="chapter" data-level="" data-path="parmaters-showcased-on-ecdc-results.html"><a href="parmaters-showcased-on-ecdc-results.html#introduction-1"><i class="fa fa-check"></i>Introduction</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">The portfolio of Nicky Klaver</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="open-peer-review" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">5</span> Open Peer Review<a href="open-peer-review.html#open-peer-review" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>A researchers quality is to be able to peer review the work of others. For this quality I am going to perform 2 peer reviews. One of the reviews is going to be me giving a score to a paper, and for this using the criteria that is publicly available <a href="https://www.researchgate.net/publication/340244621_Reproducibility_and_reporting_practices_in_COVID-19_preprint_manuscripts">here</a>. These criteria will determine how good of a reproducible paper, and what a open science paper, should be.</p>
+<p>After this initial review, I will look at another paper, and I will look for code and for data to see how reproducible this code and data is to give me the same outcome as the researcher. How many errors do I have to fix to make it work? How easy was it to fix these errors? I will also use the criteria listed, but I will also perform the analysis below here.</p>
+<div id="initial-peer-review-criteria-listing" class="section level2 unnumbered hasAnchor">
+<h2>Initial peer review criteria listing<a href="open-peer-review.html#initial-peer-review-criteria-listing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>To find the first paper you can click <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8066955/">here</a>. The authors of this paper are Petek Piner Benli &amp; Mehmet Celik. The title is: “In Vivo Effects of Neonicotinoid-Sulfoximine Insecticide Sulfoxaflor on Acetylcholinesterase Activity in the Tissues of Zebrafish (Danio rerio)”. If the link does not work for some reason, the PMCID is PMC8066955.</p>
+<div id="criteria-and-scoring-initial-peer-review" class="section level3 unnumbered hasAnchor">
+<h3>Criteria and scoring initial peer review<a href="open-peer-review.html#criteria-and-scoring-initial-peer-review" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>For this peer review, I have put on the left the criteria in a table, and on the right my rating. Some scores are binary, and some scores are a value. The binary scores are yes/no answers, the value question have more text.</p>
+<table>
+<colgroup>
+<col width="14%" />
+<col width="85%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Criteria</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Study Purpose</td>
+<td>Yes</td>
+</tr>
+<tr class="even">
+<td>Data Availability Statement</td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td>Data location</td>
+<td>From author upon request</td>
+</tr>
+<tr class="even">
+<td>Study location</td>
+<td>Yes, the Department of Food Engineering (Enzymology Laboratory, Biotechnology Laboratory), the Faculty of Agriculture and the Faculty of Fisheries, Cukurova University.</td>
+</tr>
+<tr class="odd">
+<td>Author Review</td>
+<td>Tier 2/3</td>
+</tr>
+<tr class="even">
+<td>Ethics statement</td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td>Funding statement</td>
+<td>Yes</td>
+</tr>
+<tr class="even">
+<td>Code availability</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="findings-initial-peer-review" class="section level3 unnumbered hasAnchor">
+<h3>Findings initial peer review<a href="open-peer-review.html#findings-initial-peer-review" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In this study we see that the author has been very thorough with his work. He has included most of the criteria that is expected. He has a clear study purpose, written down in a well defined title and abstract. The author review includes institution email as personal email and telephone number. The data availability statement is shown in the top, but also again on the bottom. It is upon request to the author that we could receive it. The ethics statement is written down in the materials and methods, which says:</p>
+<hr />
+<p><em>“Experimental procedures were conducted in accordance with the protocols approved by the Ethics Committee of the Çukurova University Faculty of Medicine Experimental Medicine Research and Application Centre (approval code: 3; approval date: 4 July 2018).”</em></p>
+<hr />
+<p>The funding statement is also included on the bottom part of the paper, but sadly not the code availability.</p>
+<div id="methods-materials-initial-peer-review" class="section level4 unnumbered hasAnchor">
+<h4>Methods &amp; Materials initial peer review<a href="open-peer-review.html#methods-materials-initial-peer-review" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The methods and materials that are performed and used are carefully explained in chapter 2, with subchapters 2.1 till 2.8 which each explain the importance of the methods and the used materials. The author describes the why, the what, the how much, and the when. This is important in writing a paper because this makes it reproducible.</p>
+</div>
+<div id="results-initial-peer-review" class="section level4 unnumbered hasAnchor">
+<h4>Results initial peer review<a href="open-peer-review.html#results-initial-peer-review" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The results seem to be carefully selected, and annotated nicely in multiple tables and graphs with additional explanations below those tables and graphs. With these visualizations the author concludes 3 important findings. These are the findings of the LC50, the changes of the used enzyme in the brain, and the changes in enzyme activity in the muscles. There is for us sadly no data to hold against it, because this has to be on request by the author.</p>
+</div>
+</div>
+</div>
+<div id="the-second-peer-review-with-code-and-data" class="section level2 unnumbered hasAnchor">
+<h2>The second peer review with code and data<a href="open-peer-review.html#the-second-peer-review-with-code-and-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="osf-paper" class="section level3 hasAnchor" number="5.0.1">
+<h3><span class="header-section-number">5.0.1</span> OSF paper<a href="open-peer-review.html#osf-paper" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>For the second peer review I have used a paper from OSF titled: <a href="https://osf.io/kzq69/">“Covid-19 Vaccine Paper”</a>, which had to include code and data.</p>
+<p>The code has been noted as a Rmarkdown file called “covid-vaccine-code_2020-10-04.Rmd”, and the shared data is called “Data_share_covid-19-vacanation_2020-10-04.csv”.</p>
+<p>Upon looking closely at the code, it is seen that first the data has been imported to be set at correct levels for testing. It seems that the data set and the corresponding code are answers from a survey that have been answered by multiple countries.</p>
+<p>When looking globally at the code, we can see that it is separated firstly with chunks that are prepared in logical order. You first start of with the setup for the whole Rmd file with the <code>knitr_opts</code> package, and then the data import. After this the analysis takes place in seperate chunks for every question and for every regression analysis and the created table. I personally would give this code a readability score of 5 (very good).</p>
+<p>When looking at the code it all seemed good, but when trying to run the Rmd file it gave an error for specifying the pathway to the data file. after this problem was fixed the following code in the Rmd was giving me errors. The code looked as followed:</p>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="open-peer-review.html#cb47-1" tabindex="-1"></a><span class="co">#case factor</span></span>
+<span id="cb47-2"><a href="open-peer-review.html#cb47-2" tabindex="-1"></a>data<span class="sc">$</span>case_fct <span class="ot">&lt;-</span> <span class="fu">cut</span>(<span class="fu">as.numeric</span>(data<span class="sc">$</span>casesperm),</span>
+<span id="cb47-3"><a href="open-peer-review.html#cb47-3" tabindex="-1"></a>                     <span class="fu">c</span>(<span class="sc">-</span><span class="cn">Inf</span>,<span class="dv">2000</span>,<span class="dv">4000</span>,<span class="cn">Inf</span>),<span class="at">labels =</span> <span class="fu">c</span>(</span>
+<span id="cb47-4"><a href="open-peer-review.html#cb47-4" tabindex="-1"></a>                       <span class="st">&quot;low&quot;</span>,</span>
+<span id="cb47-5"><a href="open-peer-review.html#cb47-5" tabindex="-1"></a>                       <span class="st">&quot;medium&quot;</span>,</span>
+<span id="cb47-6"><a href="open-peer-review.html#cb47-6" tabindex="-1"></a>                       <span class="st">&quot;high&quot;</span></span>
+<span id="cb47-7"><a href="open-peer-review.html#cb47-7" tabindex="-1"></a>                     ))</span></code></pre></div>
+<p>In this case it gave the following error:</p>
+<hr />
+<p><em>“Error in <code>$&lt;-.data.frame</code>(<code>*tmp*</code>, case_fct, value = integer(0)) : replacement has 0 rows, data has 13426”</em></p>
+<hr />
+<p>I did not really know how to fix this error, so I commented it out. It would mean that there was 1 less plot, but that was not such a big deal because there were plots before that already. Multiple even.</p>
+<p>There was 1 clumsy mistake in the .Rmd and that was that the libraries where not in there, the Rmd did not already contain the library <code>ggplot2</code> for instance, which was needed for the graphs. Also the <code>ggsave</code> function did not work, which I also commented out because that was also not necessary.</p>
+<p>Trying to make it reproducible was not as easy as it looked. As told above it was needed to comment out 2 functions entirely because the problems that arose were not an easy fix. I personally would give this code a reproducibility a 3 (not easy/not hard), because 2 problems where not hard, and 2 problems were (for me) not fixable as quickly as normally possible.</p>
+<p>The following code was used for the first reproducibility and for creating the first graph:</p>
+<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="open-peer-review.html#cb48-1" tabindex="-1"></a><span class="co"># Added libraries by me (Nicky) because the original Rmd did not include any libraries.</span></span>
+<span id="cb48-2"><a href="open-peer-review.html#cb48-2" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb48-3"><a href="open-peer-review.html#cb48-3" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb48-4"><a href="open-peer-review.html#cb48-4" tabindex="-1"></a><span class="fu">library</span>(base)</span>
+<span id="cb48-5"><a href="open-peer-review.html#cb48-5" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code></pre></div>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="open-peer-review.html#cb49-1" tabindex="-1"></a><span class="co"># The require options where here, but where not enough to directly reproduce the Rmd.</span></span>
+<span id="cb49-2"><a href="open-peer-review.html#cb49-2" tabindex="-1"></a><span class="fu">require</span>(tidyverse) </span>
+<span id="cb49-3"><a href="open-peer-review.html#cb49-3" tabindex="-1"></a><span class="fu">require</span>(MASS)</span>
+<span id="cb49-4"><a href="open-peer-review.html#cb49-4" tabindex="-1"></a></span>
+<span id="cb49-5"><a href="open-peer-review.html#cb49-5" tabindex="-1"></a><span class="co"># Import the data.</span></span>
+<span id="cb49-6"><a href="open-peer-review.html#cb49-6" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;/Users/nickyklaver/Downloads/Data_share_covid-19-vaccination_2020-10-04.csv&quot;</span>,<span class="at">fileEncoding =</span> <span class="st">&quot;latin1&quot;</span>) <span class="co">#fix all</span></span>
+<span id="cb49-7"><a href="open-peer-review.html#cb49-7" tabindex="-1"></a></span>
+<span id="cb49-8"><a href="open-peer-review.html#cb49-8" tabindex="-1"></a>data<span class="sc">$</span>Gender_r <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="fu">ifelse</span>(</span>
+<span id="cb49-9"><a href="open-peer-review.html#cb49-9" tabindex="-1"></a>  data<span class="sc">$</span>Gender <span class="sc">==</span> <span class="dv">1</span>, <span class="st">&quot;Male&quot;</span>,</span>
+<span id="cb49-10"><a href="open-peer-review.html#cb49-10" tabindex="-1"></a>  <span class="fu">ifelse</span>(data<span class="sc">$</span>Gender <span class="sc">==</span> <span class="dv">2</span>, <span class="st">&quot;Female&quot;</span>, <span class="st">&quot;Other&quot;</span>)</span>
+<span id="cb49-11"><a href="open-peer-review.html#cb49-11" tabindex="-1"></a>),<span class="at">ordered =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb49-12"><a href="open-peer-review.html#cb49-12" tabindex="-1"></a></span>
+<span id="cb49-13"><a href="open-peer-review.html#cb49-13" tabindex="-1"></a>data<span class="sc">$</span>within_fct <span class="ot">&lt;-</span> <span class="fu">factor</span>(data<span class="sc">$</span>within_country,<span class="at">levels =</span> <span class="fu">c</span>(</span>
+<span id="cb49-14"><a href="open-peer-review.html#cb49-14" tabindex="-1"></a>  <span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>), <span class="at">labels =</span> <span class="fu">c</span>(</span>
+<span id="cb49-15"><a href="open-peer-review.html#cb49-15" tabindex="-1"></a>    <span class="st">&quot;&lt;20%&quot;</span>,</span>
+<span id="cb49-16"><a href="open-peer-review.html#cb49-16" tabindex="-1"></a>    <span class="st">&quot;20-40%&quot;</span>,</span>
+<span id="cb49-17"><a href="open-peer-review.html#cb49-17" tabindex="-1"></a>    <span class="st">&quot;40-60%&quot;</span>,</span>
+<span id="cb49-18"><a href="open-peer-review.html#cb49-18" tabindex="-1"></a>    <span class="st">&quot;60-80%&quot;</span>,</span>
+<span id="cb49-19"><a href="open-peer-review.html#cb49-19" tabindex="-1"></a>    <span class="st">&quot;&gt;80%&quot;</span>,</span>
+<span id="cb49-20"><a href="open-peer-review.html#cb49-20" tabindex="-1"></a>    <span class="st">&quot;Refused&quot;</span></span>
+<span id="cb49-21"><a href="open-peer-review.html#cb49-21" tabindex="-1"></a>  ))</span>
+<span id="cb49-22"><a href="open-peer-review.html#cb49-22" tabindex="-1"></a></span>
+<span id="cb49-23"><a href="open-peer-review.html#cb49-23" tabindex="-1"></a>data<span class="sc">$</span>ww_fct <span class="ot">&lt;-</span> <span class="fu">factor</span>(data<span class="sc">$</span>world_wide, <span class="at">levels =</span> <span class="fu">c</span>(</span>
+<span id="cb49-24"><a href="open-peer-review.html#cb49-24" tabindex="-1"></a>  <span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">6</span>), <span class="fu">c</span>(</span>
+<span id="cb49-25"><a href="open-peer-review.html#cb49-25" tabindex="-1"></a>    <span class="st">&quot;&lt;$2 per day&quot;</span>,</span>
+<span id="cb49-26"><a href="open-peer-review.html#cb49-26" tabindex="-1"></a>    <span class="st">&quot;$2-$8 per day&quot;</span>,</span>
+<span id="cb49-27"><a href="open-peer-review.html#cb49-27" tabindex="-1"></a>    <span class="st">&quot;$8-$32 per day&quot;</span>,</span>
+<span id="cb49-28"><a href="open-peer-review.html#cb49-28" tabindex="-1"></a>    <span class="st">&quot;$32+&quot;</span>,</span>
+<span id="cb49-29"><a href="open-peer-review.html#cb49-29" tabindex="-1"></a>    <span class="st">&quot;Refused&quot;</span></span>
+<span id="cb49-30"><a href="open-peer-review.html#cb49-30" tabindex="-1"></a>  ))</span>
+<span id="cb49-31"><a href="open-peer-review.html#cb49-31" tabindex="-1"></a></span>
+<span id="cb49-32"><a href="open-peer-review.html#cb49-32" tabindex="-1"></a>data<span class="sc">$</span>educ_fact <span class="ot">&lt;-</span> <span class="fu">factor</span>(data<span class="sc">$</span>Universal_edu,</span>
+<span id="cb49-33"><a href="open-peer-review.html#cb49-33" tabindex="-1"></a>                         <span class="at">levels =</span> <span class="fu">c</span>(</span>
+<span id="cb49-34"><a href="open-peer-review.html#cb49-34" tabindex="-1"></a>                           <span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span></span>
+<span id="cb49-35"><a href="open-peer-review.html#cb49-35" tabindex="-1"></a>                         ), <span class="at">labels =</span> <span class="fu">c</span>(</span>
+<span id="cb49-36"><a href="open-peer-review.html#cb49-36" tabindex="-1"></a>                           <span class="st">&quot;Less than high school&quot;</span>,</span>
+<span id="cb49-37"><a href="open-peer-review.html#cb49-37" tabindex="-1"></a>                           <span class="st">&quot;High school some college&quot;</span>,</span>
+<span id="cb49-38"><a href="open-peer-review.html#cb49-38" tabindex="-1"></a>                           <span class="st">&quot;Bachelor&quot;</span>,</span>
+<span id="cb49-39"><a href="open-peer-review.html#cb49-39" tabindex="-1"></a>                           <span class="st">&quot;Post Graduate&quot;</span></span>
+<span id="cb49-40"><a href="open-peer-review.html#cb49-40" tabindex="-1"></a>                         ))</span>
+<span id="cb49-41"><a href="open-peer-review.html#cb49-41" tabindex="-1"></a></span>
+<span id="cb49-42"><a href="open-peer-review.html#cb49-42" tabindex="-1"></a></span>
+<span id="cb49-43"><a href="open-peer-review.html#cb49-43" tabindex="-1"></a>data<span class="sc">$</span>country_name <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(<span class="fu">ifelse</span>( <span class="co">#this is by far one of the most egregios pieces of code I have written please forgive me I was tired and hit a wall and now I am too lazy to change it to something more elegant (Written by author)</span></span>
+<span id="cb49-44"><a href="open-peer-review.html#cb49-44" tabindex="-1"></a>  data<span class="sc">$</span>Country <span class="sc">==</span> <span class="dv">1</span>,<span class="st">&quot;Brazil&quot;</span>,</span>
+<span id="cb49-45"><a href="open-peer-review.html#cb49-45" tabindex="-1"></a>  <span class="fu">ifelse</span>(data<span class="sc">$</span>Country <span class="sc">==</span> <span class="dv">2</span>, <span class="st">&quot;Canada&quot;</span>,<span class="fu">ifelse</span>(</span>
+<span id="cb49-46"><a href="open-peer-review.html#cb49-46" tabindex="-1"></a>    data<span class="sc">$</span>Country <span class="sc">==</span> <span class="dv">3</span>, <span class="st">&quot;China&quot;</span>,<span class="fu">ifelse</span>(</span>
+<span id="cb49-47"><a href="open-peer-review.html#cb49-47" tabindex="-1"></a>      data<span class="sc">$</span>Country <span class="sc">==</span> <span class="dv">4</span>, <span class="st">&quot;Ecuador&quot;</span>,<span class="fu">ifelse</span>(</span>
+<span id="cb49-48"><a href="open-peer-review.html#cb49-48" tabindex="-1"></a>        data<span class="sc">$</span>Country <span class="sc">==</span> <span class="dv">5</span>, <span class="st">&quot;France&quot;</span>,<span class="fu">ifelse</span>(</span>
+<span id="cb49-49"><a href="open-peer-review.html#cb49-49" tabindex="-1"></a>          data<span class="sc">$</span>Country <span class="sc">==</span> <span class="dv">6</span>, <span class="st">&quot;Germany&quot;</span>,<span class="fu">ifelse</span>(</span>
+<span id="cb49-50"><a href="open-peer-review.html#cb49-50" tabindex="-1"></a>            data<span class="sc">$</span>Country <span class="sc">==</span> <span class="dv">7</span>, <span class="st">&quot;India&quot;</span>,<span class="fu">ifelse</span>(</span>
+<span id="cb49-51"><a href="open-peer-review.html#cb49-51" tabindex="-1"></a>              data<span class="sc">$</span>Country <span class="sc">==</span> <span class="dv">8</span>, <span class="st">&quot;Italy&quot;</span>,<span class="fu">ifelse</span>(</span>
+<span id="cb49-52"><a href="open-peer-review.html#cb49-52" tabindex="-1"></a>                data<span class="sc">$</span>Country <span class="sc">==</span> <span class="dv">9</span>, <span class="st">&quot;Mexico&quot;</span>,<span class="fu">ifelse</span>(</span>
+<span id="cb49-53"><a href="open-peer-review.html#cb49-53" tabindex="-1"></a>                  data<span class="sc">$</span>Country <span class="sc">==</span> <span class="dv">10</span>, <span class="st">&quot;Nigeria&quot;</span>,<span class="fu">ifelse</span>(</span>
+<span id="cb49-54"><a href="open-peer-review.html#cb49-54" tabindex="-1"></a>                    data<span class="sc">$</span>Country <span class="sc">==</span> <span class="dv">11</span>, <span class="st">&quot;Poland&quot;</span>,<span class="fu">ifelse</span>(</span>
+<span id="cb49-55"><a href="open-peer-review.html#cb49-55" tabindex="-1"></a>                      data<span class="sc">$</span>Country <span class="sc">==</span> <span class="dv">12</span>, <span class="st">&quot;Russia&quot;</span>,<span class="fu">ifelse</span>(</span>
+<span id="cb49-56"><a href="open-peer-review.html#cb49-56" tabindex="-1"></a>                        data<span class="sc">$</span>Country <span class="sc">==</span> <span class="dv">13</span>, <span class="st">&quot;South Africa&quot;</span>,</span>
+<span id="cb49-57"><a href="open-peer-review.html#cb49-57" tabindex="-1"></a>                        <span class="fu">ifelse</span>(</span>
+<span id="cb49-58"><a href="open-peer-review.html#cb49-58" tabindex="-1"></a>                          data<span class="sc">$</span>Country <span class="sc">==</span> <span class="dv">14</span>, <span class="st">&quot;South Korea&quot;</span>,<span class="fu">ifelse</span>(</span>
+<span id="cb49-59"><a href="open-peer-review.html#cb49-59" tabindex="-1"></a>                            data<span class="sc">$</span>Country <span class="sc">==</span> <span class="dv">15</span>, <span class="st">&quot;Singapore&quot;</span>,</span>
+<span id="cb49-60"><a href="open-peer-review.html#cb49-60" tabindex="-1"></a>                            <span class="fu">ifelse</span>(</span>
+<span id="cb49-61"><a href="open-peer-review.html#cb49-61" tabindex="-1"></a>                              data<span class="sc">$</span>Country <span class="sc">==</span> <span class="dv">16</span>, <span class="st">&quot;Spain&quot;</span>,</span>
+<span id="cb49-62"><a href="open-peer-review.html#cb49-62" tabindex="-1"></a>                              <span class="fu">ifelse</span>(</span>
+<span id="cb49-63"><a href="open-peer-review.html#cb49-63" tabindex="-1"></a>                                data<span class="sc">$</span>Country <span class="sc">==</span> <span class="dv">17</span>, <span class="st">&quot;Sweden&quot;</span>,<span class="fu">ifelse</span>(</span>
+<span id="cb49-64"><a href="open-peer-review.html#cb49-64" tabindex="-1"></a>                                  data<span class="sc">$</span>Country <span class="sc">==</span> <span class="dv">18</span>, <span class="st">&quot;United Kingdom&quot;</span>,<span class="fu">ifelse</span>(</span>
+<span id="cb49-65"><a href="open-peer-review.html#cb49-65" tabindex="-1"></a>                                    data<span class="sc">$</span>Country <span class="sc">==</span> <span class="dv">19</span>, <span class="st">&quot;United States&quot;</span>,<span class="st">&quot;l&quot;</span></span>
+<span id="cb49-66"><a href="open-peer-review.html#cb49-66" tabindex="-1"></a>))))))))))))))))))))</span>
+<span id="cb49-67"><a href="open-peer-review.html#cb49-67" tabindex="-1"></a></span>
+<span id="cb49-68"><a href="open-peer-review.html#cb49-68" tabindex="-1"></a></span>
+<span id="cb49-69"><a href="open-peer-review.html#cb49-69" tabindex="-1"></a>data<span class="sc">$</span>agegroup_fct <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="at">x =</span> data<span class="sc">$</span>Age_grou, <span class="at">levels =</span> <span class="fu">c</span>(<span class="dv">1</span>,</span>
+<span id="cb49-70"><a href="open-peer-review.html#cb49-70" tabindex="-1"></a>                                                          <span class="dv">2</span>,</span>
+<span id="cb49-71"><a href="open-peer-review.html#cb49-71" tabindex="-1"></a>                                                          <span class="dv">3</span>,</span>
+<span id="cb49-72"><a href="open-peer-review.html#cb49-72" tabindex="-1"></a>                                                          <span class="dv">4</span>),</span>
+<span id="cb49-73"><a href="open-peer-review.html#cb49-73" tabindex="-1"></a>                            <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">&quot;18-24&quot;</span>,</span>
+<span id="cb49-74"><a href="open-peer-review.html#cb49-74" tabindex="-1"></a>                                       <span class="st">&quot;25-54&quot;</span>,</span>
+<span id="cb49-75"><a href="open-peer-review.html#cb49-75" tabindex="-1"></a>                                       <span class="st">&quot;55-64&quot;</span>,</span>
+<span id="cb49-76"><a href="open-peer-review.html#cb49-76" tabindex="-1"></a>                                       <span class="st">&quot;65+&quot;</span>), <span class="at">ordered =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb49-77"><a href="open-peer-review.html#cb49-77" tabindex="-1"></a></span>
+<span id="cb49-78"><a href="open-peer-review.html#cb49-78" tabindex="-1"></a><span class="co">#mortlity factor</span></span>
+<span id="cb49-79"><a href="open-peer-review.html#cb49-79" tabindex="-1"></a>data<span class="sc">$</span>mortality_fct <span class="ot">&lt;-</span> <span class="fu">cut</span>(<span class="fu">as.numeric</span>(data<span class="sc">$</span>mortalityperm),</span>
+<span id="cb49-80"><a href="open-peer-review.html#cb49-80" tabindex="-1"></a>                          <span class="fu">c</span>(<span class="sc">-</span><span class="cn">Inf</span>,<span class="dv">200</span>,<span class="dv">400</span>,<span class="cn">Inf</span>),<span class="at">labels =</span> <span class="fu">c</span>(</span>
+<span id="cb49-81"><a href="open-peer-review.html#cb49-81" tabindex="-1"></a>                            <span class="st">&quot;low&quot;</span>,</span>
+<span id="cb49-82"><a href="open-peer-review.html#cb49-82" tabindex="-1"></a>                            <span class="st">&quot;medium&quot;</span>,</span>
+<span id="cb49-83"><a href="open-peer-review.html#cb49-83" tabindex="-1"></a>                            <span class="st">&quot;high&quot;</span></span>
+<span id="cb49-84"><a href="open-peer-review.html#cb49-84" tabindex="-1"></a>                          ))</span>
+<span id="cb49-85"><a href="open-peer-review.html#cb49-85" tabindex="-1"></a><span class="co">#case factor /// commentend out by Nicky</span></span>
+<span id="cb49-86"><a href="open-peer-review.html#cb49-86" tabindex="-1"></a><span class="co">#data$case_fct &lt;- cut(as.numeric(data$casesperm),</span></span>
+<span id="cb49-87"><a href="open-peer-review.html#cb49-87" tabindex="-1"></a>                     <span class="co">#c(-Inf,2000,4000,Inf),labels = c(</span></span>
+<span id="cb49-88"><a href="open-peer-review.html#cb49-88" tabindex="-1"></a>                      <span class="co"># &quot;low&quot;,</span></span>
+<span id="cb49-89"><a href="open-peer-review.html#cb49-89" tabindex="-1"></a>                      <span class="co"># &quot;medium&quot;,</span></span>
+<span id="cb49-90"><a href="open-peer-review.html#cb49-90" tabindex="-1"></a>                      <span class="co"># &quot;high&quot;</span></span>
+<span id="cb49-91"><a href="open-peer-review.html#cb49-91" tabindex="-1"></a>                     <span class="co">#))</span></span>
+<span id="cb49-92"><a href="open-peer-review.html#cb49-92" tabindex="-1"></a></span>
+<span id="cb49-93"><a href="open-peer-review.html#cb49-93" tabindex="-1"></a></span>
+<span id="cb49-94"><a href="open-peer-review.html#cb49-94" tabindex="-1"></a><span class="do">###just the index vars</span></span>
+<span id="cb49-95"><a href="open-peer-review.html#cb49-95" tabindex="-1"></a>data_test <span class="ot">&lt;-</span> data[,<span class="dv">4</span><span class="sc">:</span><span class="dv">13</span>]</span>
+<span id="cb49-96"><a href="open-peer-review.html#cb49-96" tabindex="-1"></a></span>
+<span id="cb49-97"><a href="open-peer-review.html#cb49-97" tabindex="-1"></a><span class="do">###make group data</span></span>
+<span id="cb49-98"><a href="open-peer-review.html#cb49-98" tabindex="-1"></a></span>
+<span id="cb49-99"><a href="open-peer-review.html#cb49-99" tabindex="-1"></a><span class="co"># need to make pop covid and need to make pop COVID</span></span></code></pre></div>
+<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="open-peer-review.html#cb50-1" tabindex="-1"></a>data<span class="sc">$</span>Busines2_fct <span class="ot">&lt;-</span> <span class="fu">factor</span>(data<span class="sc">$</span>Business2,</span>
+<span id="cb50-2"><a href="open-peer-review.html#cb50-2" tabindex="-1"></a>                            <span class="at">levels =</span> <span class="fu">c</span>(</span>
+<span id="cb50-3"><a href="open-peer-review.html#cb50-3" tabindex="-1"></a>                              <span class="dv">1</span>,</span>
+<span id="cb50-4"><a href="open-peer-review.html#cb50-4" tabindex="-1"></a>                              <span class="dv">2</span>,</span>
+<span id="cb50-5"><a href="open-peer-review.html#cb50-5" tabindex="-1"></a>                              <span class="dv">3</span>,</span>
+<span id="cb50-6"><a href="open-peer-review.html#cb50-6" tabindex="-1"></a>                              <span class="dv">4</span>,</span>
+<span id="cb50-7"><a href="open-peer-review.html#cb50-7" tabindex="-1"></a>                              <span class="dv">5</span></span>
+<span id="cb50-8"><a href="open-peer-review.html#cb50-8" tabindex="-1"></a>                            ),</span>
+<span id="cb50-9"><a href="open-peer-review.html#cb50-9" tabindex="-1"></a>                            <span class="at">labels =</span> <span class="fu">c</span>(</span>
+<span id="cb50-10"><a href="open-peer-review.html#cb50-10" tabindex="-1"></a>                              <span class="st">&quot;Completely disagree&quot;</span>,</span>
+<span id="cb50-11"><a href="open-peer-review.html#cb50-11" tabindex="-1"></a>                              <span class="st">&quot;Somewhat disagree&quot;</span>,</span>
+<span id="cb50-12"><a href="open-peer-review.html#cb50-12" tabindex="-1"></a>                              <span class="st">&quot;Neutral/no opinion&quot;</span>,</span>
+<span id="cb50-13"><a href="open-peer-review.html#cb50-13" tabindex="-1"></a>                              <span class="st">&quot;Somewhat agree&quot;</span>,</span>
+<span id="cb50-14"><a href="open-peer-review.html#cb50-14" tabindex="-1"></a>                              <span class="st">&quot;Completely agree&quot;</span></span>
+<span id="cb50-15"><a href="open-peer-review.html#cb50-15" tabindex="-1"></a>                            ))</span>
+<span id="cb50-16"><a href="open-peer-review.html#cb50-16" tabindex="-1"></a></span>
+<span id="cb50-17"><a href="open-peer-review.html#cb50-17" tabindex="-1"></a></span>
+<span id="cb50-18"><a href="open-peer-review.html#cb50-18" tabindex="-1"></a><span class="fu">summary</span>(data<span class="sc">$</span>Busines2_fct)</span></code></pre></div>
+<pre><code>## Completely disagree   Somewhat disagree  Neutral/no opinion      Somewhat agree 
+##                1179                2299                3488                4579 
+##    Completely agree 
+##                1881</code></pre>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="open-peer-review.html#cb52-1" tabindex="-1"></a><span class="co">#busi by gender</span></span>
+<span id="cb52-2"><a href="open-peer-review.html#cb52-2" tabindex="-1"></a>gender <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(</span>
+<span id="cb52-3"><a href="open-peer-review.html#cb52-3" tabindex="-1"></a>  <span class="at">data =</span> data</span>
+<span id="cb52-4"><a href="open-peer-review.html#cb52-4" tabindex="-1"></a>)<span class="sc">+</span></span>
+<span id="cb52-5"><a href="open-peer-review.html#cb52-5" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="fu">aes</span>(</span>
+<span id="cb52-6"><a href="open-peer-review.html#cb52-6" tabindex="-1"></a>    <span class="at">x =</span> Gender_r,</span>
+<span id="cb52-7"><a href="open-peer-review.html#cb52-7" tabindex="-1"></a>    <span class="at">fill =</span> Busines2_fct</span>
+<span id="cb52-8"><a href="open-peer-review.html#cb52-8" tabindex="-1"></a>  ), <span class="at">stat =</span> <span class="st">&#39;count&#39;</span>, <span class="at">position =</span> <span class="st">&#39;fill&#39;</span>)<span class="sc">+</span></span>
+<span id="cb52-9"><a href="open-peer-review.html#cb52-9" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>, <span class="at">size =</span> <span class="dv">10</span>))<span class="sc">+</span></span>
+<span id="cb52-10"><a href="open-peer-review.html#cb52-10" tabindex="-1"></a>  <span class="fu">coord_flip</span>()<span class="sc">+</span></span>
+<span id="cb52-11"><a href="open-peer-review.html#cb52-11" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Business by gender&quot;</span>)<span class="sc">+</span></span>
+<span id="cb52-12"><a href="open-peer-review.html#cb52-12" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">&quot;Proportion&quot;</span>)<span class="sc">+</span></span>
+<span id="cb52-13"><a href="open-peer-review.html#cb52-13" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">&quot;Gender&quot;</span>)<span class="sc">+</span></span>
+<span id="cb52-14"><a href="open-peer-review.html#cb52-14" tabindex="-1"></a>  <span class="fu">scale_fill_brewer</span>(<span class="st">&quot;Response&quot;</span>, <span class="at">type =</span> <span class="st">&quot;div&quot;</span>, <span class="at">palette =</span> <span class="dv">4</span>)</span>
+<span id="cb52-15"><a href="open-peer-review.html#cb52-15" tabindex="-1"></a>gender</span></code></pre></div>
+<p><img src="_main_files/figure-html/graph%20second%20peer%20review-1.png" width="672" /></p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="portfolio-assignment-1.1-c-elegans-plate.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="the-easyread-r-package.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

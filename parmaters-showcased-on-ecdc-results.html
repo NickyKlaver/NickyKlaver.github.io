@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>The portfolio of Nicky Klaver</title>
-  <meta name="description" content="The portfolio of Nicky Klaver" />
+  <title>8 Parmaters showcased on ECDC results | The portfolio of Nicky Klaver</title>
+  <meta name="description" content="8 Parmaters showcased on ECDC results | The portfolio of Nicky Klaver" />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="The portfolio of Nicky Klaver" />
+  <meta property="og:title" content="8 Parmaters showcased on ECDC results | The portfolio of Nicky Klaver" />
   <meta property="og:type" content="book" />
   
   
   <meta name="github-repo" content="rstudio/dsfb2_workflows_portfolio" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="The portfolio of Nicky Klaver" />
+  <meta name="twitter:title" content="8 Parmaters showcased on ECDC results | The portfolio of Nicky Klaver" />
   
   
   
@@ -28,8 +28,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="cv.html"/>
+<link rel="prev" href="project-introduction-pedriactic-cancer.html"/>
+<link rel="next" href="references.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -241,42 +241,62 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">The portfolio of Nicky Klaver</h1>
-</div>
-<div id="introduction" class="section level1 unnumbered hasAnchor">
-<h1>Introduction<a href="index.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This is the portfolio of Nicky Klaver, my github book you can find <a href="https://nickyklaver.github.io/">on these words :D</a>.
-In this portfolio you can see the different assignments that have been presented to me, and you can see my results in this document. This includes document includes:</p>
-<li>
-My Curicullum Vitaé
-</li>
-<li>
-My free space assignment where I learn a self taught skill
-</li>
-<li>
-My Guerilla analytics workflow
-</li>
-<li>
-My troubleshooting capabilities on C. elegans analysis
-</li>
-<li>
-My self made R package with 4 functions with documentation
-</li>
-<li>
-My parameters skills performed on ECDC data
-</li>
-<p><br></p>
-<p>Enjoy!</p>
+<div id="parmaters-showcased-on-ecdc-results" class="section level1 hasAnchor" number="8">
+<h1><span class="header-section-number">8</span> Parmaters showcased on ECDC results<a href="parmaters-showcased-on-ecdc-results.html#parmaters-showcased-on-ecdc-results" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="introduction-1" class="section level2 unnumbered hasAnchor">
+<h2>Introduction<a href="parmaters-showcased-on-ecdc-results.html#introduction-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>When performing an analysis on a data set, it is often smart to add parameters to your Rmarkdown file. This is because the use of parameters create a easy and simple way to perform different analysis forms (inputs) on the same data set. In this Rmarkdown I will show you how a parameter can influence the different outcomes of the analysis because of variable change. The used dataset is form European Centre for Disease Prevention and Control (ECDC) and can be found <a href="https://www.ecdc.europa.eu/en/publications-data/data-daily-new-cases-covid-19-eueea-country">here</a>.</p>
+<p>We are now generating a report on Covid-19 cases in the year 2022 and the month May for the country Netherlands.</p>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="parmaters-showcased-on-ecdc-results.html#cb53-1" tabindex="-1"></a><span class="co"># Create the graph for the cases within the parameters.</span></span>
+<span id="cb53-2"><a href="parmaters-showcased-on-ecdc-results.html#cb53-2" tabindex="-1"></a>Cases_graph <span class="ot">&lt;-</span> ECDC_data <span class="sc">%&gt;%</span> </span>
+<span id="cb53-3"><a href="parmaters-showcased-on-ecdc-results.html#cb53-3" tabindex="-1"></a>  <span class="fu">group_by</span>(countriesAndTerritories) <span class="sc">%&gt;%</span> </span>
+<span id="cb53-4"><a href="parmaters-showcased-on-ecdc-results.html#cb53-4" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">==</span> params<span class="sc">$</span>year <span class="sc">&amp;</span> countriesAndTerritories <span class="sc">==</span> params<span class="sc">$</span>country <span class="sc">&amp;</span> month <span class="sc">==</span> params<span class="sc">$</span>month) <span class="sc">%&gt;%</span> </span>
+<span id="cb53-5"><a href="parmaters-showcased-on-ecdc-results.html#cb53-5" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb53-6"><a href="parmaters-showcased-on-ecdc-results.html#cb53-6" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y=</span> cases, <span class="at">x =</span> day))<span class="sc">+</span></span>
+<span id="cb53-7"><a href="parmaters-showcased-on-ecdc-results.html#cb53-7" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="fu">paste</span>(<span class="st">&quot;A graph of all COVID-19 cases in the country&quot;</span>, params<span class="sc">$</span>country), <span class="at">subtitle =</span> <span class="fu">paste</span>(<span class="st">&quot;in the year&quot;</span>, params<span class="sc">$</span>year, <span class="st">&quot;and the month&quot;</span>, month))<span class="sc">+</span> </span>
+<span id="cb53-8"><a href="parmaters-showcased-on-ecdc-results.html#cb53-8" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="fu">paste</span>(<span class="st">&quot;The days in month&quot;</span>, params<span class="sc">$</span>month))<span class="sc">+</span></span>
+<span id="cb53-9"><a href="parmaters-showcased-on-ecdc-results.html#cb53-9" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="fu">paste</span>(<span class="st">&quot;The amount of COVID-19 cases&quot;</span>))</span>
+<span id="cb53-10"><a href="parmaters-showcased-on-ecdc-results.html#cb53-10" tabindex="-1"></a></span>
+<span id="cb53-11"><a href="parmaters-showcased-on-ecdc-results.html#cb53-11" tabindex="-1"></a><span class="co"># Showcase the cases graph within the parameters.</span></span>
+<span id="cb53-12"><a href="parmaters-showcased-on-ecdc-results.html#cb53-12" tabindex="-1"></a>Cases_graph</span></code></pre></div>
+<p><img src="_main_files/figure-html/COVID-19%20cases%20graph-1.png" width="672" /></p>
+<p>We are now creating the same report but on Covid-19 deaths in the year 2022 and the month May for the country Netherlands.</p>
+<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="parmaters-showcased-on-ecdc-results.html#cb54-1" tabindex="-1"></a><span class="co"># Create the deaths graph within the parameters.</span></span>
+<span id="cb54-2"><a href="parmaters-showcased-on-ecdc-results.html#cb54-2" tabindex="-1"></a>Death_graph <span class="ot">&lt;-</span> ECDC_data <span class="sc">%&gt;%</span> </span>
+<span id="cb54-3"><a href="parmaters-showcased-on-ecdc-results.html#cb54-3" tabindex="-1"></a>  <span class="fu">group_by</span>(countriesAndTerritories) <span class="sc">%&gt;%</span> </span>
+<span id="cb54-4"><a href="parmaters-showcased-on-ecdc-results.html#cb54-4" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">==</span> params<span class="sc">$</span>year <span class="sc">&amp;</span> countriesAndTerritories <span class="sc">==</span> params<span class="sc">$</span>country <span class="sc">&amp;</span> month <span class="sc">==</span> params<span class="sc">$</span>month) <span class="sc">%&gt;%</span> <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb54-5"><a href="parmaters-showcased-on-ecdc-results.html#cb54-5" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y=</span> deaths, <span class="at">x =</span> day))<span class="sc">+</span></span>
+<span id="cb54-6"><a href="parmaters-showcased-on-ecdc-results.html#cb54-6" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="fu">paste</span>(<span class="st">&quot;A graph of all COVID-19 deaths in the country&quot;</span>, params<span class="sc">$</span>country), <span class="at">subtitle =</span> <span class="fu">paste</span>(<span class="st">&quot;in the year&quot;</span>, params<span class="sc">$</span>year, <span class="st">&quot;and the month&quot;</span>, month))<span class="sc">+</span> </span>
+<span id="cb54-7"><a href="parmaters-showcased-on-ecdc-results.html#cb54-7" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="fu">paste</span>(<span class="st">&quot;The days in month&quot;</span>, params<span class="sc">$</span>month))<span class="sc">+</span></span>
+<span id="cb54-8"><a href="parmaters-showcased-on-ecdc-results.html#cb54-8" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="fu">paste</span>(<span class="st">&quot;The amount of COVID-19 deaths&quot;</span>))</span>
+<span id="cb54-9"><a href="parmaters-showcased-on-ecdc-results.html#cb54-9" tabindex="-1"></a></span>
+<span id="cb54-10"><a href="parmaters-showcased-on-ecdc-results.html#cb54-10" tabindex="-1"></a><span class="co"># Showcase the deaths graph within the parameters.</span></span>
+<span id="cb54-11"><a href="parmaters-showcased-on-ecdc-results.html#cb54-11" tabindex="-1"></a>Death_graph </span></code></pre></div>
+<p><img src="_main_files/figure-html/COVID-19%20deaths%20graph-1.png" width="672" /></p>
+<p>At last we are also intereseted in the amount of cases in the year 2022 and the month May for all the countries in the dataset.</p>
+<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="parmaters-showcased-on-ecdc-results.html#cb55-1" tabindex="-1"></a><span class="co"># Create boxplot for all the cases in all the countries within the parameters.</span></span>
+<span id="cb55-2"><a href="parmaters-showcased-on-ecdc-results.html#cb55-2" tabindex="-1"></a>cases_countries <span class="ot">&lt;-</span> ECDC_data <span class="sc">%&gt;%</span> </span>
+<span id="cb55-3"><a href="parmaters-showcased-on-ecdc-results.html#cb55-3" tabindex="-1"></a>  <span class="fu">group_by</span>(countriesAndTerritories) <span class="sc">%&gt;%</span> </span>
+<span id="cb55-4"><a href="parmaters-showcased-on-ecdc-results.html#cb55-4" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">==</span> params<span class="sc">$</span>year, month <span class="sc">==</span> params<span class="sc">$</span>month) <span class="sc">%&gt;%</span> </span>
+<span id="cb55-5"><a href="parmaters-showcased-on-ecdc-results.html#cb55-5" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb55-6"><a href="parmaters-showcased-on-ecdc-results.html#cb55-6" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> cases, <span class="at">y =</span> countriesAndTerritories, <span class="at">fill =</span> countriesAndTerritories))<span class="sc">+</span></span>
+<span id="cb55-7"><a href="parmaters-showcased-on-ecdc-results.html#cb55-7" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;A graph of all COVID-19 cases in the submitted countries&quot;</span>, <span class="at">subtitle =</span> <span class="fu">paste</span>(<span class="st">&quot;In month&quot;</span>, month,<span class="st">&quot;, in the year&quot;</span>, params<span class="sc">$</span>year))<span class="sc">+</span> </span>
+<span id="cb55-8"><a href="parmaters-showcased-on-ecdc-results.html#cb55-8" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="fu">paste</span>(<span class="st">&quot;The amount of cases&quot;</span>))<span class="sc">+</span></span>
+<span id="cb55-9"><a href="parmaters-showcased-on-ecdc-results.html#cb55-9" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="fu">paste</span>(<span class="st">&quot;The countries&quot;</span>))</span>
+<span id="cb55-10"><a href="parmaters-showcased-on-ecdc-results.html#cb55-10" tabindex="-1"></a></span>
+<span id="cb55-11"><a href="parmaters-showcased-on-ecdc-results.html#cb55-11" tabindex="-1"></a><span class="co"># Showcase all the cases in all the countries within the parameters.</span></span>
+<span id="cb55-12"><a href="parmaters-showcased-on-ecdc-results.html#cb55-12" tabindex="-1"></a>cases_countries</span></code></pre></div>
+<p><img src="_main_files/figure-html/COVID-19%20cases%20all%20countries-1.png" width="672" /></p>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="cv.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="project-introduction-pedriactic-cancer.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

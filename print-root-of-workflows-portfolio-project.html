@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>print root of workflows portfolio project | _main.knit</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="print root of workflows portfolio project | _main.knit" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta name="github-repo" content="rstudio/dsfb2_workflows_portfolio" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="print root of workflows portfolio project | _main.knit" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="guerilla-analytics.html"/>
+<link rel="next" href="portfolio-assignment-1.1-c-elegans-plate.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/core-js-2.5.3/shim.min.js"></script>
+<script src="libs/react-18.2.0/react.min.js"></script>
+<script src="libs/react-18.2.0/react-dom.min.js"></script>
+<script src="libs/reactwidget-1.0.0/react-tools.js"></script>
+<link href="libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="libs/reactable-0.4.4/reactable.css" rel="stylesheet" />
+<script src="libs/reactable-binding-0.4.4/reactable.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="cv.html"><a href="cv.html"><i class="fa fa-check"></i><b>2</b> CV</a>
+<ul>
+<li class="chapter" data-level="" data-path="cv.html"><a href="cv.html#why-me"><i class="fa fa-check"></i>Why me?</a></li>
+<li class="chapter" data-level="" data-path="cv.html"><a href="cv.html#some-stuff-about-me"><i class="fa fa-check"></i>Some stuff about me</a></li>
+<li class="chapter" data-level="" data-path="cv.html"><a href="cv.html#education"><i class="fa fa-check"></i>Education</a></li>
+<li class="chapter" data-level="" data-path="cv.html"><a href="cv.html#previous-jobs"><i class="fa fa-check"></i>Previous jobs</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="free-space-assignment.html"><a href="free-space-assignment.html"><i class="fa fa-check"></i><b>3</b> Free space assignment</a>
+<ul>
+<li class="chapter" data-level="" data-path="free-space-assignment.html"><a href="free-space-assignment.html#start-of-the-free-time-project"><i class="fa fa-check"></i>Start of the free time project:</a></li>
+<li class="chapter" data-level="" data-path="free-space-assignment.html"><a href="free-space-assignment.html#meaning-of-words"><i class="fa fa-check"></i>Meaning of words</a></li>
+<li class="chapter" data-level="" data-path="free-space-assignment.html"><a href="free-space-assignment.html#r-packages-for-single-cell-rna-sequencing"><i class="fa fa-check"></i>R packages for Single cell RNA sequencing</a></li>
+<li class="chapter" data-level="" data-path="free-space-assignment.html"><a href="free-space-assignment.html#revealing-the-umi-matrix"><i class="fa fa-check"></i>Revealing the Umi Matrix</a></li>
+<li class="chapter" data-level="" data-path="free-space-assignment.html"><a href="free-space-assignment.html#analyse-the-unique-molecular-identifier-umi-matrix"><i class="fa fa-check"></i>Analyse the Unique Molecular Identifier (UMI) matrix</a></li>
+<li class="chapter" data-level="" data-path="free-space-assignment.html"><a href="free-space-assignment.html#analysis-overview"><i class="fa fa-check"></i>Analysis overview</a></li>
+<li class="chapter" data-level="3.0.1" data-path="free-space-assignment.html"><a href="free-space-assignment.html#scrna-course"><i class="fa fa-check"></i><b>3.0.1</b> scRNA course</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="guerilla-analytics.html"><a href="guerilla-analytics.html"><i class="fa fa-check"></i><b>4</b> Guerilla analytics</a>
+<ul>
+<li class="chapter" data-level="" data-path="guerilla-analytics.html"><a href="guerilla-analytics.html#print-root-of-daur2-project"><i class="fa fa-check"></i>print root of DAUR2 project</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="print-root-of-workflows-portfolio-project.html"><a href="print-root-of-workflows-portfolio-project.html"><i class="fa fa-check"></i>print root of workflows portfolio project</a></li>
+<li class="chapter" data-level="5" data-path="portfolio-assignment-1.1-c-elegans-plate.html"><a href="portfolio-assignment-1.1-c-elegans-plate.html"><i class="fa fa-check"></i><b>5</b> Portfolio assignment 1.1 C Elegans Plate</a>
+<ul>
+<li class="chapter" data-level="" data-path="portfolio-assignment-1.1-c-elegans-plate.html"><a href="portfolio-assignment-1.1-c-elegans-plate.html#anything-peculiar"><i class="fa fa-check"></i>Anything peculiar</a></li>
+<li class="chapter" data-level="" data-path="portfolio-assignment-1.1-c-elegans-plate.html"><a href="portfolio-assignment-1.1-c-elegans-plate.html#read-in-excel-file-in-r"><i class="fa fa-check"></i>read in excel file in R</a></li>
+<li class="chapter" data-level="" data-path="portfolio-assignment-1.1-c-elegans-plate.html"><a href="portfolio-assignment-1.1-c-elegans-plate.html#inspect-the-data-types-of-the-following-columns"><i class="fa fa-check"></i>Inspect the data types of the following columns</a></li>
+<li class="chapter" data-level="" data-path="portfolio-assignment-1.1-c-elegans-plate.html"><a href="portfolio-assignment-1.1-c-elegans-plate.html#create-a-graph-displaying-a-scatterplot"><i class="fa fa-check"></i>Create a graph displaying a scatterplot</a></li>
+<li class="chapter" data-level="" data-path="portfolio-assignment-1.1-c-elegans-plate.html"><a href="portfolio-assignment-1.1-c-elegans-plate.html#make-character-into-numeric"><i class="fa fa-check"></i>Make character into numeric</a></li>
+<li class="chapter" data-level="" data-path="portfolio-assignment-1.1-c-elegans-plate.html"><a href="portfolio-assignment-1.1-c-elegans-plate.html#further-analysis"><i class="fa fa-check"></i>Further analysis</a></li>
+<li class="chapter" data-level="" data-path="portfolio-assignment-1.1-c-elegans-plate.html"><a href="portfolio-assignment-1.1-c-elegans-plate.html#normalize-the-data-to-the-negative-control"><i class="fa fa-check"></i>normalize the data to the negative control</a></li>
+<li class="chapter" data-level="" data-path="portfolio-assignment-1.1-c-elegans-plate.html"><a href="portfolio-assignment-1.1-c-elegans-plate.html#why-normalize"><i class="fa fa-check"></i>Why normalize?</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="print-root-of-workflows-portfolio-project" class="section level1 unnumbered hasAnchor">
+<h1>print root of workflows portfolio project<a href="print-root-of-workflows-portfolio-project.html#print-root-of-workflows-portfolio-project" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="print-root-of-workflows-portfolio-project.html#cb11-1" tabindex="-1"></a>fs<span class="sc">::</span><span class="fu">dir_tree</span>(<span class="st">&quot;.&quot;</span>, <span class="at">recurse =</span> <span class="cn">TRUE</span>, <span class="at">regexp =</span> <span class="st">&quot;^.gitignore$|^[^_|(.git)]&quot;</span>, <span class="at">all =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<pre><code>## .
+## ├── .gitignore
+## ├── 01_CV_Nicky_Klaver.Rmd
+## ├── 02_Free_Space_Portfolio_NK.Rmd
+## ├── 03_Guerilla_Analytics.Rmd
+## ├── 04_C_Elegans_Plate.Rmd
+## ├── 20_bibliografie.Rmd
+## ├── LICENSE
+## ├── Packages_Vrije_opdracht.R
+## ├── README.md
+## ├── Vrije_opdracht.bib
+## ├── Vrije_opdracht_course
+## │   └── single-cell-training
+## │       ├── .Rhistory
+## │       ├── .Rproj.user
+## │       │   ├── F1FF246A
+## │       │   │   ├── bibliography-index
+## │       │   │   ├── ctx
+## │       │   │   ├── explorer-cache
+## │       │   │   ├── jobs
+## │       │   │   ├── pcs
+## │       │   │   │   ├── files-pane.pper
+## │       │   │   │   ├── source-pane.pper
+## │       │   │   │   ├── windowlayoutstate.pper
+## │       │   │   │   └── workbench-pane.pper
+## │       │   │   ├── presentation
+## │       │   │   ├── profiles-cache
+## │       │   │   ├── rmd-outputs
+## │       │   │   ├── saved_source_markers
+## │       │   │   ├── sources
+## │       │   │   │   ├── per
+## │       │   │   │   │   ├── t
+## │       │   │   │   │   │   ├── 0B3B1D8D
+## │       │   │   │   │   │   ├── 0B3B1D8D-contents
+## │       │   │   │   │   │   ├── 1360EB6B
+## │       │   │   │   │   │   ├── 1360EB6B-contents
+## │       │   │   │   │   │   ├── 252AB789
+## │       │   │   │   │   │   ├── 252AB789-contents
+## │       │   │   │   │   │   ├── 41EAE7FA
+## │       │   │   │   │   │   └── 41EAE7FA-contents
+## │       │   │   │   │   └── u
+## │       │   │   │   └── prop
+## │       │   │   │       ├── 19D07207
+## │       │   │   │       ├── 23520B76
+## │       │   │   │       ├── 2D6F336E
+## │       │   │   │       ├── 372671CA
+## │       │   │   │       ├── 4A98DE13
+## │       │   │   │       ├── 54D3FE7A
+## │       │   │   │       ├── 6655242B
+## │       │   │   │       ├── 807C7EF8
+## │       │   │   │       ├── 87397DF1
+## │       │   │   │       ├── 89F80FA8
+## │       │   │   │       ├── 96B3E617
+## │       │   │   │       ├── 9AAD73C6
+## │       │   │   │       ├── 9FFE5114
+## │       │   │   │       ├── BACE090D
+## │       │   │   │       ├── C583B49A
+## │       │   │   │       ├── FB6A7DEE
+## │       │   │   │       └── INDEX
+## │       │   │   ├── tutorial
+## │       │   │   └── viewer-cache
+## │       │   └── shared
+## │       │       └── notebooks
+## │       │           ├── 168D5EE3-day1-1_setup
+## │       │           │   └── 1
+## │       │           ├── DF7676D3-02_Free_Space_Portfolio_NK
+## │       │           │   └── 1
+## │       │           │       ├── F1FF246A2fc24e5d
+## │       │           │       │   └── chunks.json
+## │       │           │       └── s
+## │       │           │           └── chunks.json
+## │       │           ├── patch-chunk-names
+## │       │           └── paths
+## │       ├── .git
+## │       │   ├── HEAD
+## │       │   ├── config
+## │       │   ├── description
+## │       │   ├── hooks
+## │       │   │   ├── applypatch-msg.sample
+## │       │   │   ├── commit-msg.sample
+## │       │   │   ├── fsmonitor-watchman.sample
+## │       │   │   ├── post-update.sample
+## │       │   │   ├── pre-applypatch.sample
+## │       │   │   ├── pre-commit.sample
+## │       │   │   ├── pre-merge-commit.sample
+## │       │   │   ├── pre-push.sample
+## │       │   │   ├── pre-rebase.sample
+## │       │   │   ├── pre-receive.sample
+## │       │   │   ├── prepare-commit-msg.sample
+## │       │   │   ├── push-to-checkout.sample
+## │       │   │   └── update.sample
+## │       │   ├── index
+## │       │   ├── info
+## │       │   │   └── exclude
+## │       │   ├── logs
+## │       │   │   ├── HEAD
+## │       │   │   └── refs
+## │       │   │       ├── heads
+## │       │   │       │   └── master
+## │       │   │       └── remotes
+## │       │   │           └── origin
+## │       │   │               └── HEAD
+## │       │   ├── objects
+## │       │   │   ├── info
+## │       │   │   └── pack
+## │       │   │       ├── pack-f0e32a74c7255cd9020c1ae5c7d55d8037c39489.idx
+## │       │   │       └── pack-f0e32a74c7255cd9020c1ae5c7d55d8037c39489.pack
+## │       │   ├── packed-refs
+## │       │   └── refs
+## │       │       ├── heads
+## │       │       │   └── master
+## │       │       ├── remotes
+## │       │       │   └── origin
+## │       │       │       └── HEAD
+## │       │       └── tags
+## │       ├── .github
+## │       │   └── workflows
+## │       │       ├── docker-image-manual.yml
+## │       │       ├── docker-image.yml
+## │       │       └── render-page.yml
+## │       ├── .gitignore
+## │       ├── .quarto
+## │       │   ├── idx
+## │       │   │   ├── about.qmd.json
+## │       │   │   ├── course_schedule.qmd.json
+## │       │   │   ├── day1
+## │       │   │   │   ├── day1-1_setup.qmd.json
+## │       │   │   │   ├── day1-1a_cellranger.qmd.json
+## │       │   │   │   ├── day1-2_analysis_tools_qc.qmd.json
+## │       │   │   │   └── day1-3_normalization_scaling.qmd.json
+## │       │   │   ├── day2
+## │       │   │   │   ├── day2-1_dimensionality_reduction.qmd.json
+## │       │   │   │   ├── day2-2_integration.qmd.json
+## │       │   │   │   ├── day2-3_clustering.qmd.json
+## │       │   │   │   └── day2-4_cell_annotation.qmd.json
+## │       │   │   ├── day3
+## │       │   │   │   ├── day3-1_differential_gene_expression.qmd.json
+## │       │   │   │   ├── day3-2_enrichment_analysis.qmd.json
+## │       │   │   │   ├── day3-3_trajectory_analysis.qmd.json
+## │       │   │   │   └── day3-4_advanced_analyses.qmd.json
+## │       │   │   ├── index.qmd.json
+## │       │   │   └── precourse_preparations.qmd.json
+## │       │   ├── preview
+## │       │   └── xref
+## │       │       ├── 0b4c9c71
+## │       │       ├── 1178df2d
+## │       │       ├── 15d65949
+## │       │       ├── 187d5321
+## │       │       ├── 1e4c310c
+## │       │       ├── 2f6a95cc
+## │       │       ├── 3fdaccd9
+## │       │       ├── 4f69a2d5
+## │       │       ├── 5779f088
+## │       │       ├── 86717215
+## │       │       ├── INDEX
+## │       │       ├── a33f3724
+## │       │       ├── c24064ec
+## │       │       ├── c666602f
+## │       │       ├── daef14e9
+## │       │       ├── e5a5df7b
+## │       │       └── fca0f910
+## │       ├── .zenodo.json
+## │       ├── CONTRIBUTING.md
+## │       ├── Docker
+## │       │   ├── Dockerfile
+## │       │   ├── batch_user_creation.sh
+## │       │   ├── install_packages.R
+## │       │   └── run_locally.sh
+## │       ├── LICENSE.md
+## │       ├── README.md
+## │       ├── _extensions
+## │       │   ├── quarto-ext
+## │       │   │   └── fontawesome
+## │       │   │       ├── _extension.yml
+## │       │   │       ├── assets
+## │       │   │       │   ├── css
+## │       │   │       │   │   ├── all.css
+## │       │   │       │   │   └── latex-fontsize.css
+## │       │   │       │   └── webfonts
+## │       │   │       │       ├── fa-brands-400.ttf
+## │       │   │       │       ├── fa-brands-400.woff2
+## │       │   │       │       ├── fa-regular-400.ttf
+## │       │   │       │       ├── fa-regular-400.woff2
+## │       │   │       │       ├── fa-solid-900.ttf
+## │       │   │       │       ├── fa-solid-900.woff2
+## │       │   │       │       ├── fa-v4compatibility.ttf
+## │       │   │       │       └── fa-v4compatibility.woff2
+## │       │   │       └── fontawesome.lua
+## │       │   └── shafayetShafee
+## │       │       └── downloadthis
+## │       │           ├── _extension.yml
+## │       │           ├── downloadthis.lua
+## │       │           ├── puremagic.lua
+## │       │           └── resources
+## │       │               └── css
+## │       │                   └── downloadthis.css
+## │       ├── _freeze
+## │       │   ├── day1
+## │       │   │   ├── day1-1_setup
+## │       │   │   │   └── execute-results
+## │       │   │   │       └── html.json
+## │       │   │   ├── day1-2_analysis_tools_qc
+## │       │   │   │   ├── execute-results
+## │       │   │   │   │   └── html.json
+## │       │   │   │   └── figure-html
+## │       │   │   │       ├── unnamed-chunk-10-1.png
+## │       │   │   │       ├── unnamed-chunk-11-1.png
+## │       │   │   │       ├── unnamed-chunk-14-1.png
+## │       │   │   │       ├── unnamed-chunk-15-1.png
+## │       │   │   │       ├── unnamed-chunk-16-1.png
+## │       │   │   │       ├── unnamed-chunk-18-1.png
+## │       │   │   │       ├── unnamed-chunk-8-1.png
+## │       │   │   │       └── unnamed-chunk-9-1.png
+## │       │   │   └── day1-3_normalization_scaling
+## │       │   │       ├── execute-results
+## │       │   │       │   └── html.json
+## │       │   │       └── figure-html
+## │       │   │           ├── unnamed-chunk-5-1.png
+## │       │   │           └── unnamed-chunk-8-1.png
+## │       │   ├── day2
+## │       │   │   ├── day2-1_dimensionality_reduction
+## │       │   │   │   ├── execute-results
+## │       │   │   │   │   └── html.json
+## │       │   │   │   └── figure-html
+## │       │   │   │       ├── unnamed-chunk-10-1.png
+## │       │   │   │       ├── unnamed-chunk-11-1.png
+## │       │   │   │       ├── unnamed-chunk-13-1.png
+## │       │   │   │       ├── unnamed-chunk-15-1.png
+## │       │   │   │       ├── unnamed-chunk-17-1.png
+## │       │   │   │       ├── unnamed-chunk-4-1.png
+## │       │   │   │       ├── unnamed-chunk-5-1.png
+## │       │   │   │       ├── unnamed-chunk-6-1.png
+## │       │   │   │       ├── unnamed-chunk-7-1.png
+## │       │   │   │       └── unnamed-chunk-8-1.png
+## │       │   │   ├── day2-2_integration
+## │       │   │   │   ├── execute-results
+## │       │   │   │   │   └── html.json
+## │       │   │   │   └── figure-html
+## │       │   │   │       ├── unnamed-chunk-2-1.png
+## │       │   │   │       └── unnamed-chunk-5-1.png
+## │       │   │   ├── day2-3_clustering
+## │       │   │   │   ├── execute-results
+## │       │   │   │   │   └── html.json
+## │       │   │   │   └── figure-html
+## │       │   │   │       ├── unnamed-chunk-5-1.png
+## │       │   │   │       ├── unnamed-chunk-6-1.png
+## │       │   │   │       └── unnamed-chunk-7-1.png
+## │       │   │   └── day2-4_cell_annotation
+## │       │   │       ├── execute-results
+## │       │   │       │   └── html.json
+## │       │   │       └── figure-html
+## │       │   │           ├── unnamed-chunk-10-1.png
+## │       │   │           ├── unnamed-chunk-12-1.png
+## │       │   │           ├── unnamed-chunk-13-1.png
+## │       │   │           ├── unnamed-chunk-16-1.png
+## │       │   │           ├── unnamed-chunk-20-1.png
+## │       │   │           ├── unnamed-chunk-21-1.png
+## │       │   │           ├── unnamed-chunk-24-1.png
+## │       │   │           ├── unnamed-chunk-25-1.png
+## │       │   │           ├── unnamed-chunk-26-1.png
+## │       │   │           ├── unnamed-chunk-5-1.png
+## │       │   │           ├── unnamed-chunk-7-1.png
+## │       │   │           ├── unnamed-chunk-8-1.png
+## │       │   │           └── unnamed-chunk-9-1.png
+## │       │   ├── day3
+## │       │   │   ├── day3-1_differential_gene_expression
+## │       │   │   │   ├── execute-results
+## │       │   │   │   │   └── html.json
+## │       │   │   │   └── figure-html
+## │       │   │   │       ├── unnamed-chunk-13-1.png
+## │       │   │   │       ├── unnamed-chunk-14-1.png
+## │       │   │   │       ├── unnamed-chunk-15-1.png
+## │       │   │   │       ├── unnamed-chunk-21-1.png
+## │       │   │   │       ├── unnamed-chunk-23-1.png
+## │       │   │   │       ├── unnamed-chunk-23-2.png
+## │       │   │   │       ├── unnamed-chunk-26-1.png
+## │       │   │   │       └── unnamed-chunk-5-1.png
+## │       │   │   ├── day3-2_enrichment_analysis
+## │       │   │   │   ├── execute-results
+## │       │   │   │   │   └── html.json
+## │       │   │   │   └── figure-html
+## │       │   │   │       └── unnamed-chunk-12-1.png
+## │       │   │   └── day3-3_trajectory_analysis
+## │       │   │       ├── execute-results
+## │       │   │       │   └── html.json
+## │       │   │       └── figure-html
+## │       │   │           ├── unnamed-chunk-11-1.png
+## │       │   │           ├── unnamed-chunk-14-1.png
+## │       │   │           ├── unnamed-chunk-15-1.png
+## │       │   │           ├── unnamed-chunk-19-1.png
+## │       │   │           ├── unnamed-chunk-20-1.png
+## │       │   │           ├── unnamed-chunk-20-2.png
+## │       │   │           ├── unnamed-chunk-21-1.png
+## │       │   │           ├── unnamed-chunk-21-2.png
+## │       │   │           ├── unnamed-chunk-29-1.png
+## │       │   │           ├── unnamed-chunk-31-1.png
+## │       │   │           ├── unnamed-chunk-31-2.png
+## │       │   │           ├── unnamed-chunk-31-3.png
+## │       │   │           ├── unnamed-chunk-32-1.png
+## │       │   │           ├── unnamed-chunk-34-1.png
+## │       │   │           ├── unnamed-chunk-35-1.png
+## │       │   │           ├── unnamed-chunk-38-1.png
+## │       │   │           ├── unnamed-chunk-41-1.png
+## │       │   │           ├── unnamed-chunk-46-1.png
+## │       │   │           ├── unnamed-chunk-47-1.png
+## │       │   │           └── unnamed-chunk-9-1.png
+## │       │   └── site_libs
+## │       │       └── clipboard
+## │       │           └── clipboard.min.js
+## │       ├── _quarto.yml
+## │       ├── _site
+## │       │   ├── about.html
+## │       │   ├── assets
+## │       │   │   ├── SIB_LogoQ_GBv.svg
+## │       │   │   ├── SIB_logo.svg
+## │       │   │   └── images
+## │       │   │       ├── choose_cells.gif
+## │       │   │       ├── choose_new_directory.png
+## │       │   │       ├── choose_new_project.png
+## │       │   │       ├── create_new_project.png
+## │       │   │       ├── define_directory_name.png
+## │       │   │       ├── open_html.png
+## │       │   │       ├── select_terminal_tab.png
+## │       │   │       ├── seurat_object.png
+## │       │   │       └── umap_nonintegrated_dim50.png
+## │       │   ├── course_schedule.html
+## │       │   ├── day1
+## │       │   │   ├── day1-1_setup.html
+## │       │   │   ├── day1-1a_cellranger.html
+## │       │   │   ├── day1-2_analysis_tools_qc.html
+## │       │   │   ├── day1-2_analysis_tools_qc_files
+## │       │   │   │   └── figure-html
+## │       │   │   │       ├── unnamed-chunk-10-1.png
+## │       │   │   │       ├── unnamed-chunk-11-1.png
+## │       │   │   │       ├── unnamed-chunk-14-1.png
+## │       │   │   │       ├── unnamed-chunk-15-1.png
+## │       │   │   │       ├── unnamed-chunk-16-1.png
+## │       │   │   │       ├── unnamed-chunk-18-1.png
+## │       │   │   │       ├── unnamed-chunk-8-1.png
+## │       │   │   │       └── unnamed-chunk-9-1.png
+## │       │   │   ├── day1-3_normalization_scaling.html
+## │       │   │   └── day1-3_normalization_scaling_files
+## │       │   │       └── figure-html
+## │       │   │           └── unnamed-chunk-8-1.png
+## │       │   ├── day2
+## │       │   │   ├── day2-1_dimensionality_reduction.html
+## │       │   │   ├── day2-1_dimensionality_reduction_files
+## │       │   │   │   └── figure-html
+## │       │   │   │       ├── unnamed-chunk-10-1.png
+## │       │   │   │       ├── unnamed-chunk-11-1.png
+## │       │   │   │       ├── unnamed-chunk-13-1.png
+## │       │   │   │       ├── unnamed-chunk-15-1.png
+## │       │   │   │       ├── unnamed-chunk-17-1.png
+## │       │   │   │       ├── unnamed-chunk-4-1.png
+## │       │   │   │       ├── unnamed-chunk-5-1.png
+## │       │   │   │       ├── unnamed-chunk-6-1.png
+## │       │   │   │       ├── unnamed-chunk-7-1.png
+## │       │   │   │       └── unnamed-chunk-8-1.png
+## │       │   │   ├── day2-2_integration.html
+## │       │   │   ├── day2-2_integration_files
+## │       │   │   │   └── figure-html
+## │       │   │   │       ├── unnamed-chunk-2-1.png
+## │       │   │   │       └── unnamed-chunk-5-1.png
+## │       │   │   ├── day2-3_clustering.html
+## │       │   │   ├── day2-3_clustering_files
+## │       │   │   │   └── figure-html
+## │       │   │   │       ├── unnamed-chunk-5-1.png
+## │       │   │   │       ├── unnamed-chunk-6-1.png
+## │       │   │   │       └── unnamed-chunk-7-1.png
+## │       │   │   ├── day2-4_cell_annotation.html
+## │       │   │   └── day2-4_cell_annotation_files
+## │       │   │       └── figure-html
+## │       │   │           ├── unnamed-chunk-10-1.png
+## │       │   │           ├── unnamed-chunk-12-1.png
+## │       │   │           ├── unnamed-chunk-13-1.png
+## │       │   │           ├── unnamed-chunk-16-1.png
+## │       │   │           ├── unnamed-chunk-20-1.png
+## │       │   │           ├── unnamed-chunk-21-1.png
+## │       │   │           ├── unnamed-chunk-24-1.png
+## │       │   │           ├── unnamed-chunk-25-1.png
+## │       │   │           ├── unnamed-chunk-26-1.png
+## │       │   │           ├── unnamed-chunk-5-1.png
+## │       │   │           ├── unnamed-chunk-7-1.png
+## │       │   │           ├── unnamed-chunk-8-1.png
+## │       │   │           └── unnamed-chunk-9-1.png
+## │       │   ├── day3
+## │       │   │   ├── day3-1_differential_gene_expression.html
+## │       │   │   ├── day3-1_differential_gene_expression_files
+## │       │   │   │   └── figure-html
+## │       │   │   │       ├── unnamed-chunk-13-1.png
+## │       │   │   │       ├── unnamed-chunk-14-1.png
+## │       │   │   │       ├── unnamed-chunk-15-1.png
+## │       │   │   │       ├── unnamed-chunk-21-1.png
+## │       │   │   │       ├── unnamed-chunk-23-1.png
+## │       │   │   │       ├── unnamed-chunk-23-2.png
+## │       │   │   │       ├── unnamed-chunk-26-1.png
+## │       │   │   │       └── unnamed-chunk-5-1.png
+## │       │   │   ├── day3-2_enrichment_analysis.html
+## │       │   │   ├── day3-2_enrichment_analysis_files
+## │       │   │   │   └── figure-html
+## │       │   │   │       └── unnamed-chunk-12-1.png
+## │       │   │   ├── day3-3_trajectory_analysis.html
+## │       │   │   ├── day3-3_trajectory_analysis_files
+## │       │   │   │   └── figure-html
+## │       │   │   │       ├── unnamed-chunk-11-1.png
+## │       │   │   │       ├── unnamed-chunk-14-1.png
+## │       │   │   │       ├── unnamed-chunk-15-1.png
+## │       │   │   │       ├── unnamed-chunk-19-1.png
+## │       │   │   │       ├── unnamed-chunk-20-1.png
+## │       │   │   │       ├── unnamed-chunk-20-2.png
+## │       │   │   │       ├── unnamed-chunk-21-1.png
+## │       │   │   │       ├── unnamed-chunk-21-2.png
+## │       │   │   │       ├── unnamed-chunk-29-1.png
+## │       │   │   │       ├── unnamed-chunk-31-1.png
+## │       │   │   │       ├── unnamed-chunk-31-2.png
+## │       │   │   │       ├── unnamed-chunk-31-3.png
+## │       │   │   │       ├── unnamed-chunk-32-1.png
+## │       │   │   │       ├── unnamed-chunk-34-1.png
+## │       │   │   │       ├── unnamed-chunk-35-1.png
+## │       │   │   │       ├── unnamed-chunk-38-1.png
+## │       │   │   │       ├── unnamed-chunk-41-1.png
+## │       │   │   │       ├── unnamed-chunk-46-1.png
+## │       │   │   │       ├── unnamed-chunk-47-1.png
+## │       │   │   │       └── unnamed-chunk-9-1.png
+## │       │   │   └── day3-4_advanced_analyses.html
+## │       │   ├── index.html
+## │       │   ├── precourse_preparations.html
+## │       │   ├── search.json
+## │       │   └── site_libs
+## │       │       ├── bootstrap
+## │       │       │   ├── bootstrap-icons.css
+## │       │       │   ├── bootstrap-icons.woff
+## │       │       │   ├── bootstrap.min.css
+## │       │       │   └── bootstrap.min.js
+## │       │       ├── clipboard
+## │       │       │   └── clipboard.min.js
+## │       │       ├── quarto-contrib
+## │       │       │   └── downloadthis-1.9.1
+## │       │       │       └── downloadthis.css
+## │       │       ├── quarto-html
+## │       │       │   ├── anchor.min.js
+## │       │       │   ├── popper.min.js
+## │       │       │   ├── quarto-syntax-highlighting.css
+## │       │       │   ├── quarto.js
+## │       │       │   ├── tippy.css
+## │       │       │   └── tippy.umd.min.js
+## │       │       ├── quarto-nav
+## │       │       │   ├── headroom.min.js
+## │       │       │   └── quarto-nav.js
+## │       │       └── quarto-search
+## │       │           ├── autocomplete.umd.js
+## │       │           ├── fuse.min.js
+## │       │           └── quarto-search.js
+## │       ├── about.qmd
+## │       ├── assets
+## │       │   ├── SIB_LogoQ_GBv.svg
+## │       │   ├── SIB_logo.svg
+## │       │   ├── images
+## │       │   │   ├── choose_cells.gif
+## │       │   │   ├── choose_new_directory.png
+## │       │   │   ├── choose_new_project.png
+## │       │   │   ├── create_new_project.png
+## │       │   │   ├── define_directory_name.png
+## │       │   │   ├── exp_pseudotime.png
+## │       │   │   ├── open_html.png
+## │       │   │   ├── select_terminal_tab.png
+## │       │   │   ├── seurat_object.png
+## │       │   │   ├── umap_bcell_cd34plus.png
+## │       │   │   ├── umap_monocle.png
+## │       │   │   ├── umap_monocle3_clustered.png
+## │       │   │   ├── umap_monocle_CD79A.png
+## │       │   │   ├── umap_monocle_pseudotime.png
+## │       │   │   ├── umap_monocle_trajectory.png
+## │       │   │   ├── umap_nonintegrated_dim50.png
+## │       │   │   └── umaps_bcells_goi.png
+## │       │   ├── pdf
+## │       │   │   ├── 01_introduction.pdf
+## │       │   │   ├── 02_introduction_scRNAseq.pdf
+## │       │   │   ├── 03_10x_genomics_single_cell.pdf
+## │       │   │   ├── 04_analysis_tools_qc.pdf
+## │       │   │   ├── DGE_and_enrichment_analysis.pdf
+## │       │   │   ├── Lecture_pseudotime_velocity.pdf
+## │       │   │   ├── Miscellanous.pdf
+## │       │   │   ├── Trajectories.pdf
+## │       │   │   ├── cell_type_annotation.pdf
+## │       │   │   ├── scRNAseq_RM_Integration_dimreduction.pdf
+## │       │   │   └── scRNAseq_clustering_RM.pdf
+## │       │   └── spreadsheet
+## │       │       └── detailed_schedule_single_cell_transcriptomics.xlsx
+## │       ├── course_schedule.qmd
+## │       ├── custom.scss
+## │       ├── day1
+## │       │   ├── day1-1_setup.qmd
+## │       │   ├── day1-1a_cellranger.qmd
+## │       │   ├── day1-2_analysis_tools_qc.qmd
+## │       │   ├── day1-2_analysis_tools_qc_files
+## │       │   │   └── figure-html
+## │       │   │       ├── unnamed-chunk-10-1.png
+## │       │   │       ├── unnamed-chunk-11-1.png
+## │       │   │       ├── unnamed-chunk-14-1.png
+## │       │   │       ├── unnamed-chunk-15-1.png
+## │       │   │       ├── unnamed-chunk-16-1.png
+## │       │   │       ├── unnamed-chunk-18-1.png
+## │       │   │       ├── unnamed-chunk-8-1.png
+## │       │   │       └── unnamed-chunk-9-1.png
+## │       │   ├── day1-3_normalization_scaling.qmd
+## │       │   └── day1-3_normalization_scaling_files
+## │       │       └── figure-html
+## │       │           ├── unnamed-chunk-5-1.png
+## │       │           └── unnamed-chunk-8-1.png
+## │       ├── day2
+## │       │   ├── day2-1_dimensionality_reduction.qmd
+## │       │   ├── day2-1_dimensionality_reduction_files
+## │       │   │   └── figure-html
+## │       │   │       ├── unnamed-chunk-10-1.png
+## │       │   │       ├── unnamed-chunk-11-1.png
+## │       │   │       ├── unnamed-chunk-13-1.png
+## │       │   │       ├── unnamed-chunk-15-1.png
+## │       │   │       ├── unnamed-chunk-17-1.png
+## │       │   │       ├── unnamed-chunk-4-1.png
+## │       │   │       ├── unnamed-chunk-5-1.png
+## │       │   │       ├── unnamed-chunk-6-1.png
+## │       │   │       ├── unnamed-chunk-7-1.png
+## │       │   │       └── unnamed-chunk-8-1.png
+## │       │   ├── day2-2_integration.qmd
+## │       │   ├── day2-2_integration_files
+## │       │   │   └── figure-html
+## │       │   │       ├── unnamed-chunk-2-1.png
+## │       │   │       └── unnamed-chunk-5-1.png
+## │       │   ├── day2-3_clustering.qmd
+## │       │   ├── day2-3_clustering_files
+## │       │   │   └── figure-html
+## │       │   │       ├── unnamed-chunk-5-1.png
+## │       │   │       ├── unnamed-chunk-6-1.png
+## │       │   │       └── unnamed-chunk-7-1.png
+## │       │   ├── day2-4_cell_annotation.qmd
+## │       │   └── day2-4_cell_annotation_files
+## │       │       └── figure-html
+## │       │           ├── unnamed-chunk-10-1.png
+## │       │           ├── unnamed-chunk-12-1.png
+## │       │           ├── unnamed-chunk-13-1.png
+## │       │           ├── unnamed-chunk-16-1.png
+## │       │           ├── unnamed-chunk-20-1.png
+## │       │           ├── unnamed-chunk-21-1.png
+## │       │           ├── unnamed-chunk-24-1.png
+## │       │           ├── unnamed-chunk-25-1.png
+## │       │           ├── unnamed-chunk-26-1.png
+## │       │           ├── unnamed-chunk-5-1.png
+## │       │           ├── unnamed-chunk-7-1.png
+## │       │           ├── unnamed-chunk-8-1.png
+## │       │           └── unnamed-chunk-9-1.png
+## │       ├── day3
+## │       │   ├── day3-1_differential_gene_expression.qmd
+## │       │   ├── day3-1_differential_gene_expression_files
+## │       │   │   └── figure-html
+## │       │   │       ├── unnamed-chunk-13-1.png
+## │       │   │       ├── unnamed-chunk-14-1.png
+## │       │   │       ├── unnamed-chunk-15-1.png
+## │       │   │       ├── unnamed-chunk-21-1.png
+## │       │   │       ├── unnamed-chunk-23-1.png
+## │       │   │       ├── unnamed-chunk-23-2.png
+## │       │   │       ├── unnamed-chunk-26-1.png
+## │       │   │       └── unnamed-chunk-5-1.png
+## │       │   ├── day3-2_enrichment_analysis.qmd
+## │       │   ├── day3-2_enrichment_analysis_files
+## │       │   │   └── figure-html
+## │       │   │       └── unnamed-chunk-12-1.png
+## │       │   ├── day3-3_trajectory_analysis.qmd
+## │       │   ├── day3-3_trajectory_analysis_files
+## │       │   │   └── figure-html
+## │       │   │       ├── unnamed-chunk-11-1.png
+## │       │   │       ├── unnamed-chunk-14-1.png
+## │       │   │       ├── unnamed-chunk-15-1.png
+## │       │   │       ├── unnamed-chunk-19-1.png
+## │       │   │       ├── unnamed-chunk-20-1.png
+## │       │   │       ├── unnamed-chunk-20-2.png
+## │       │   │       ├── unnamed-chunk-21-1.png
+## │       │   │       ├── unnamed-chunk-21-2.png
+## │       │   │       ├── unnamed-chunk-29-1.png
+## │       │   │       ├── unnamed-chunk-31-1.png
+## │       │   │       ├── unnamed-chunk-31-2.png
+## │       │   │       ├── unnamed-chunk-31-3.png
+## │       │   │       ├── unnamed-chunk-32-1.png
+## │       │   │       ├── unnamed-chunk-34-1.png
+## │       │   │       ├── unnamed-chunk-35-1.png
+## │       │   │       ├── unnamed-chunk-38-1.png
+## │       │   │       ├── unnamed-chunk-41-1.png
+## │       │   │       ├── unnamed-chunk-46-1.png
+## │       │   │       ├── unnamed-chunk-47-1.png
+## │       │   │       └── unnamed-chunk-9-1.png
+## │       │   └── day3-4_advanced_analyses.qmd
+## │       ├── index.qmd
+## │       ├── polls
+## │       │   ├── README.md
+## │       │   └── polls.json
+## │       ├── precourse_preparations.qmd
+## │       ├── scripts
+## │       │   ├── auto_extracted_code.R
+## │       │   ├── discussion
+## │       │   │   ├── discussion_day1.R
+## │       │   │   ├── discussion_day2.r
+## │       │   │   └── discussion_day3.R
+## │       │   ├── extract_code.sh
+## │       │   ├── generate_dataset
+## │       │   │   ├── 00-download_SRA.sh
+## │       │   │   ├── 01-prepare_reference.sh
+## │       │   │   ├── 02-cellranger.sh
+## │       │   │   ├── 02b-cellranger_full.sh
+## │       │   │   ├── 03-extract_mapped_reads.sh
+## │       │   │   ├── 04_Preprocessing_And_QC.Prepare_filtered_SCE_object.R
+## │       │   │   ├── 05-prepare_count_matrices.sh
+## │       │   │   ├── 06-test_cellranger_subsampled.sh
+## │       │   │   └── sample_info.csv
+## │       │   ├── generate_object_proB.R
+## │       │   ├── install_cellranger.sh
+## │       │   ├── local_container.sh
+## │       │   └── run_analysis.R
+## │       ├── single-cell-training.Rproj
+## │       └── styles.css
+## ├── data
+## │   ├── CE.LIQ.FLOW.062_Tidydata.xlsx
+## │   ├── GSE149938_umi_matrix.csv.gz
+## │   ├── Metadata_data.txt
+## │   └── README_data.txt
+## ├── dsfb2_workflows_portfolio.Rproj
+## └── raw_data
+##     ├── .DS_Store
+##     ├── CE.LIQ.FLOW.062_Tidydata.xlsx
+##     ├── GSE149938_umi_matrix.csv.gz
+##     ├── README_rawdata.txt
+##     └── reads.rds</code></pre>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="guerilla-analytics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="portfolio-assignment-1.1-c-elegans-plate.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
